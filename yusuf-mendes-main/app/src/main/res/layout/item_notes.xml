@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noteTitle"
+            style="@style/Title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/note_title"
+            android:textColor="@color/login_screen_text_color" />
+
+        <TextView
+            android:id="@+id/noteDetail"
+            style="@style/Title4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:paddingStart="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/note_detail"
+            android:textColor="#8B959A" />
+
+    </LinearLayout>
+</layout>

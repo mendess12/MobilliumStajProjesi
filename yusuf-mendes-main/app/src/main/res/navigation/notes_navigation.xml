@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/notes_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.yusufmendes.basicnoteapp.ui.login.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.yusufmendes.basicnoteapp.ui.forgotpassword.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment">
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_bottomSheetDialog"
+            app:destination="@id/bottomSheetDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.yusufmendes.basicnoteapp.ui.signup.SignUpFragment"
+        android:label="SignUpFragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_signUpFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.yusufmendes.basicnoteapp.ui.note.NotesFragment"
+        android:label="NotesFragment">
+        <action
+            android:id="@+id/action_notesFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_noteDetailFragment"
+            app:destination="@id/noteDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.yusufmendes.basicnoteapp.ui.notedetail.NoteDetailFragment"
+        android:label="NoteDetailFragment">
+        <argument
+            android:name="note"
+            android:defaultValue="@null"
+            app:argType="com.yusufmendes.basicnoteapp.model.note.NoteDataList"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_noteDetailFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.yusufmendes.basicnoteapp.ui.profile.ProfileFragment"
+        android:label="ProfileFragment">
+        <action
+            android:id="@+id/action_profileFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profileFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.yusufmendes.basicnoteapp.ui.changepassword.ChangePasswordFragment"
+        android:label="ChangePasswordFragment">
+        <action
+            android:id="@+id/action_changePasswordFragment_to_notesFragment"
+            app:destination="@id/notesFragment"
+            app:popUpTo="@id/notesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetDialog"
+        android:name="com.yusufmendes.basicnoteapp.ui.bottomsheet.BottomSheetDialog"
+        android:label="BottomSheetDialog">
+        <action
+            android:id="@+id/action_bottomSheetDialog_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </dialog>
+</navigation>

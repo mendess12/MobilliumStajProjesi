@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BasicNoteApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_up_now">Sign up now</string>
+    <string name="message">Login or sign up to continue using our app.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="account">Already have an account?</string>
+    <string name="sign_in_now">Sign in now</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="password_message">Confirm your email and we will send the instructions.</string>
+    <string name="search">Search...</string>
+    <string name="add_note">Add Note</string>
+    <string name="note_error">Error! Try Again</string>
+    <string name="note_title">Title</string>
+    <string name="note_detail">Note Detail</string>
+    <string name="save_note">Save Note</string>
+    <string name="save">Save</string>
+    <string name="profile">Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_new_password">Retype New Password</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="toast_message">The email and password you entered did not match our records. Please try again.</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="success_title">Password Reset Confirmation</string>
+    <string name="success_message">An email has been sent to basicnote@app.com with further instructions.</string>
+    <string name="error_message">This area can not be empty</string>
+    <string name="alert_dialog_title">Delete Note</string>
+    <string name="alert_dialog_detail">Are you sure you want to delete this note.</string>
+
+</resources>
